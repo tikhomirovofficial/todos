@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./styles/App.css"
+import "./styles/tikstyles.css"
+const App = () => {
+    return (
+        <div className="TodoApp h-100p f-c-col">
+            <div className="container w-100p">
+                <div className="TodoContent f-column gap-20">
+                    <h1 className="TodoContentTitle ">Задачи</h1>
+                    <div className="TodoBlock bg-white w-100p">
+                    </div>
+                </div>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+            </div>
+        </div>
+    );
+};
 
 export default App;
